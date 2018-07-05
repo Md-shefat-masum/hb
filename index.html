@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>title</title>
+    <!--    google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet">
+
+    <!--    bootsrap css-->
+    <link rel="stylesheet" href="essential/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-better-nav.min.css">
+
+    <!--    font awesome css-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="essential/css/font-awesome.min.css">
+
+    <!--    slick sliders css-->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slickBanner.css" />
+
+    <!--    magnific-->
+    <link rel="stylesheet" href="essential/css/magnific-popup.css">
+    <!--    mixitup gallery controller css-->
+    <link rel="stylesheet" href="essential/css/mix-it-up-control.css">
+
+    <!-- wow.js -->
+    <link rel="stylesheet" href="essential/css/animate.css" />
+
+    <!--    back to top button css-->
+    <link rel="stylesheet" href="essential/css/back-to-top-button.css">
+
+    <!--    defaule css-->
+    <link rel="stylesheet" href="essential/css/defaultcss.css">
+
+    <!--    own css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--    responsive css-->
+    <link rel="stylesheet" href="essential/css/responsive.css">
+</head>
+
+<body>
+
+    <!--    banner section-->
+    <section id="banner">
+        <div class="video-wrapper">
+            <div class="video" id="video"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="images/light-purple.png" class="light" alt="">
+                    <div class="row ">
+                        <div class="col-6">
+                            <div class="row banner">
+                                <div class="col-12">
+                                    <h4>
+                                        “Count your life by smiles, not tears. Count your age by friends, not years. Happy birthday!”
+                                    </h4>
+                                </div>
+                                <div class="col-12">
+                                    <h4>
+                                        “Happy birthday! I hope all your birthday wishes and dreams come true.”
+                                    </h4>
+                                </div>
+                                <div class="col-12">
+                                    <h4>
+                                        “A wish for you on your birthday, whatever you ask may you receive, whatever you seek may you find, whatever you wish may it be fulfilled on your birthday and always. Happy birthday!”
+                                    </h4>
+                                </div>
+                                <div class="col-12">
+                                    <h4>
+                                        “Forget the past; look forward to the future, for the best things are yet to come.”
+                                    </h4>
+                                </div>
+
+                                <div class="col-12">
+                                    <h4>
+                                        “Be happy! Today is the day you were brought into this world You are a wonderful person! May you be given more birthdays to fulfill all of your dreams!”
+                                    </h4>
+                                </div>
+
+                                <div class="col-12">
+                                    <h4>
+                                        “You’re older today than yesterday but younger than tomorrow, happy birthday!”
+                                    </h4>
+                                </div>
+
+                                <div class="col-12">
+                                    <h4>
+                                        “Sending you smiles for every moment of your special day…Have a wonderful time and a very happy birthday!”
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 ">
+                            <div class="row banner">
+                                <div class="col-12 image">
+                                    <img src="images/cake.JPG" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-12 image">
+                                    <img src="images/tmu1.jpg" class="img-fluid w-75" alt="">
+                                </div>
+                                <div class="col-12 image">
+                                    <img src="images/tmu2.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-12 image">
+                                    <img src="images/tmu3.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-12 image">
+                                    <img src="images/tmu4.jpg" class="img-fluid w-75" alt="">
+                                </div>
+                                <div class="col-12 image">
+                                    <img src="images/tmu5.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cake">
+        <div class="overlay">
+            <div class="text">
+                <h1 class="wow bounceInUp">thanx for being my best friend</h1>
+                <h2 class="wow fadeInDown">all best wishes for you</h2>
+                <h3 class="">happy birth day</h3>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var tag = document.createElement('script');
+        tag.src = 'https://www.youtube.com/player_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        var tv,
+            playerDefaults = {
+                autoplay: 0,
+                autohide: 1,
+                modestbranding: 0,
+                rel: 0,
+                showinfo: 0,
+                controls: 0,
+                disablekb: 1,
+                enablejsapi: 0,
+                iv_load_policy: 3
+            };
+        var vid = [{
+                'videoId': 'gbhDd7yDQoE',
+                'startSeconds': 0,
+                'endSeconds': 90,
+                'suggestedQuality': 'hd720'
+            }, ],
+            randomvid = Math.floor(Math.random() * (vid.length - 1 + 1));
+
+        function onYouTubePlayerAPIReady() {
+            tv = new YT.Player('video', {
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                },
+                playerVars: playerDefaults
+            });
+        }
+
+        function onPlayerReady() {
+            tv.loadVideoById(vid[randomvid]);
+            tv.mute();
+        }
+
+        function onPlayerStateChange(e) {
+            if (e.data === 1) {
+                $('#tv').addClass('active');
+            } else if (e.data === 0) {
+                tv.seekTo(vid[randomvid].startSeconds)
+            }
+        }
+
+    </script>
+    <!--    script part-->
+    <script src="essential/js/jquery-2.1.1.min.js "></script>
+    <script src="js/bootstrap-better-nav.min.js "></script>
+
+    <!-- wow js -->
+    <script src="essential/js/wow.min.js "></script>
+    <script src="essential/js/wowCustom.js "></script>
+
+    <!--    bootstrap js-->
+    <script src="essential/js/bootstrap.min.js "></script>
+
+    <!--    magnific pop up -->
+    <script src="essential/js/jquery.magnific-popup.min.js "></script>
+    <!--    mix it up-->
+    <script src="essential/js/mixitup.min.js "></script>
+
+    <!--    slick js-->
+    <script src="js/slick.min.js "></script>
+
+    <!--    back to top button js-->
+    <script src="essential/js/back-to-top-button.js"></script>
+
+    <!--    own js-->
+    <script src="js/custom.js "></script>
+    <script src="js/slicksCustom.js "></script>
+    <script src="essential/js/custom-mixitup-and-popup-image.js"></script>
+
+
+</body>
+
+</html>
